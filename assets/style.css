@@ -5,6 +5,8 @@
     --background-darkMode: white;
     --color-hover-darkMode: white;
     --background-hover-darkMode: black;
+    --width-screen: 100%;
+    --heigth-screen: 100vh;
 }
 
 html
@@ -20,8 +22,8 @@ body
     margin: 0;
     padding: 0;
     background: var(--background-darkMode);
-    min-height: 100vh;
-    max-width: 100vw;
+    min-height: var(--heigth-screen);
+    max-width: var(--width-screen);
     font-family: "Typo";
     color: var(--color-darkMode);
 }
@@ -36,8 +38,8 @@ a
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: var(--width-screen);
+    height: var(--heigth-screen);
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -76,7 +78,7 @@ a
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: var(--width-screen);
     height: 50px;
     background: transparent;
     display: flex;
@@ -86,13 +88,27 @@ a
     z-index: 2;
 }
 
-.nav-bar #logo
+.nav-bar .titre-site
 {
     margin-left: 100px;
     font-weight: 600;
     font-size: 24px;
     color: #3480E4;
+}
+
+.titre-site a
+{
     text-decoration: none;
+}
+
+.titre-site #chemin{
+    margin-left: -6px;
+}
+
+.titre-site span
+{
+    opacity: 0;
+    animation: blink 0.75s infinite;
 }
 
 .nav-list
@@ -140,8 +156,8 @@ a
 
 .container
 {
-    height: 100vh;
-    width: 100vw;
+    height: var(--heigth-screen);
+    width: var(--width-screen);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,7 +197,7 @@ a
 {
     position: absolute;
     bottom: 50px;
-    width: 100%;
+    width: 100%; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -231,16 +247,44 @@ a
 #projets .projet-container
 {
     border: 2px solid grey;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.projet-container .projet:not(:last-child):after
+{
+    content:""; 
+    float: left;
+    margin-left: 35%;
+    margin-right: 35%;
+    background:#3480E4; 
+    width: 30%; 
+    height:5px; 
+    margin-top: 30px;
+    border-radius: 3px;
+}
+
+.projet
+{
+    padding: 10px;
 }
 
 .projet p
 {
     color: grey;
+    font-size: 17px;
 }
 
+.projet .nom-projet
+{
+    font-style: italic;
+}
 footer
 {
     color: var(--color-darkMode);
@@ -282,11 +326,21 @@ footer a
     text-decoration: none;
 }
 
+.point
+{
+    font-family: serif;
+}
+
 
 @font-face {
     font-family: "Typo";
     src: local("Typo"),
       url("../font/typo-round/Typo_Round_Regular_Demo.otf") format("opentype");
   }
+
+@keyframes blink
+{
+    100%{opacity: 1;};
+}
   
 

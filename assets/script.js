@@ -15,21 +15,21 @@ function darkMode()
     let rs = getComputedStyle(r);
     if(rs.getPropertyValue('--color-darkMode') == "black")
     {
-        r.style.setProperty('--color-darkMode','white');
-        r.style.setProperty('--background-darkMode','black');
-        r.style.setProperty('--color-hover-darkMode','black');
-        r.style.setProperty('--background-hover-darkMode','white');
-        document.getElementById("darkMode").classList.add("fa-regular");
-        document.getElementById("darkMode").classList.remove("fa-solid");
+      r.style.setProperty('--color-darkMode','white');
+      r.style.setProperty('--background-darkMode','black');
+      r.style.setProperty('--color-hover-darkMode','black');
+      r.style.setProperty('--background-hover-darkMode','white');
+      document.getElementById("darkMode").classList.add("fa-regular");
+      document.getElementById("darkMode").classList.remove("fa-solid");
     }
     else
     {
-        r.style.setProperty('--color-darkMode','black');
-        r.style.setProperty('--background-darkMode','white');
-        r.style.setProperty('--color-hover-darkMode','white');
-        r.style.setProperty('--background-hover-darkMode','black');
-        document.getElementById("darkMode").classList.remove("fa-regular");
-        document.getElementById("darkMode").classList.add("fa-solid");
+      r.style.setProperty('--color-darkMode','black');
+      r.style.setProperty('--background-darkMode','white');
+      r.style.setProperty('--color-hover-darkMode','white');
+      r.style.setProperty('--background-hover-darkMode','black');
+      document.getElementById("darkMode").classList.remove("fa-regular");
+      document.getElementById("darkMode").classList.add("fa-solid");
     }
     
 
