@@ -6,31 +6,52 @@
     <meta name="viewport">
     <title>Portfolio</title>
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/contact.css">
 </head>
 <body>
-    <div class="nav-bar">
-        <div class="titre-site">
-            <a href="index.html" id="titre-site">@theolenglart/</a><a href="contact.html">Contact</a>
-            <span id="chemin">/</span>
-        </div>
-        <ul class="nav-list">
-            <li><a href="index.html" class="non">Acceuil</a></li>
-            <li><a href="#projets" class="non">Mes Projets</a></li>
-            <li><a href="#" class="non">À propos</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-            <li class="icon" onclick="darkMode()"><i id="darkMode" class="fa-solid fa-moon"></i></li>
-            
-        </ul>
+    <div class="parallax">
+        <span value="-15"></span>
+        <span value="2"></span>
+        <span value="10"></span>
     </div>
-    <div class="container">
-        <footer>
-            <ul>
-                <li><i class="fa-brands fa-twitter fa-lg"></i></li>
-                <li><i class="fa-brands fa-github fa-2xl"></i></li>
+    <div class="background">
+        <div class="nav-bar">
+            <div class="titre-site">
+                <a href="index.html" id="titre-site">@theolenglart</a>
+                <span id="chemin">/</span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html" class="non">Acceuil</a></li>
+                <li><a href="index.html#projets" class="non">Mes Projets</a></li>
+                <li><a href="#" class="non">À propos</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li class="icon" onclick="darkMode()"><i id="darkMode" class="fa-solid fa-moon"></i></li>
+                
             </ul>
-            <p><a href="#">Théo Lenglart 2023</a> • <a href="#">Accueil</a> • <a href="#">Mes Projets</a> • <a href="#">À Propos</a> • <a href="#">Contact</a></p>
-        </footer>
+        </div>
+        <h1>Me contacter</h1>
+        <div class="contact-container">
+            <div class="card-container">
+                <div class="card">
+                    <h1 class="title">Email</h1>
+                    <p>theo<span class="point">.</span>lenglart<span class="point">.</span>etu@univ-lille<span class="point">.</span>fr</p>
+                </div>
+                <div class="card">
+                    <h1 class="title">GitHub</h1>
+                    <p>@thlgeo</p>
+                </div>
+
+            </div>
+            <footer>
+                <ul>
+                    <li><i class="fa-brands fa-twitter fa-lg"></i></li>
+                    <li><i class="fa-brands fa-github fa-2xl"></i></li>
+                </ul>
+                <p><a href="#">Théo Lenglart 2023</a> • <a href="#">Accueil</a> • <a href="#">Mes Projets</a> • <a href="#">À Propos</a> • <a href="#">Contact</a></p>
+            </footer>
+        </div>
     </div>
+    
     
     <script src="assets/script.js"></script>
     <script src="https://kit.fontawesome.com/d8711a63f5.js" crossorigin="anonymous"></script>

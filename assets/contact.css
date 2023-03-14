@@ -1,0 +1,83 @@
+:root
+{
+    --color-darkMode: black;
+    --background-darkMode: white;
+    --color-hover-darkMode: white;
+    --background-hover-darkMode: black;
+    --width-screen: 100%;
+    --heigth-screen: 100vh;
+}
+
+.nav-list
+{
+    margin-right: 115px;
+}
+
+.background
+{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+} 
+
+.background h1:not(.title)
+{
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 70px;
+    color: #3480E4;
+    position: absolute;
+}
+
+.contact-container
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--width-screen);
+    height: var(--heigth-screen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.card
+{
+    width: 20vw;
+    height: 25vh;
+    border-radius: 15px;
+    /* display: flex; */
+    text-align: center;
+    color: lightgrey;
+    font-size: 23px;
+    background-color: #4484D7;
+    transition: 0.3s;
+}
+
+.card:hover
+{
+    transform: scale(1.05);
+}
+
+.card .title
+{
+    font-size: 40px;
+    color: var(--color-darkMode);
+    width: 100%;
+    border-bottom: 2px solid lightgrey;
+}
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
