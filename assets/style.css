@@ -301,6 +301,7 @@ footer ul
     flex-wrap: wrap;
     gap: 20px;
     list-style: none;
+    max-height: 30px;
 }
 
 footer ul li
@@ -310,15 +311,54 @@ footer ul li
     align-items: center;
     height: 30px;
     width: 30px;
-    border: 1px solid black;
+    border: 1px solid gray;
     border-radius: 25px;
     cursor: pointer;
+    flex-direction: column;
+    transition: 0.3s;
+    background-color: black;
+    color: white;
+}
+
+footer ul li p
+{
+    display: none;
+}
+
+ul .rectangle
+{
+    transform: bottom center;
+    width: 20vw;
+    height: 15vh;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+    text-align: center; 
+    margin-top: -10vh;
+}
+
+.rectangle p
+{
+    display: block;
+    margin-top: 40px;
 }
 
 footer ul li:nth-child(1)
 {
     background-color: #3480E4;
     color: white;
+}
+
+footer ul li:nth-child(2) img
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.rectangle img
+{
+    margin-bottom: -25px;
 }
 
 footer a
@@ -331,7 +371,6 @@ footer a
 {
     font-family: serif;
 }
-
 
 @font-face {
     font-family: "Typo";

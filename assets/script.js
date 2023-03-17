@@ -31,24 +31,41 @@ function darkMode()
       document.getElementById("darkMode").classList.remove("fa-regular");
       document.getElementById("darkMode").classList.add("fa-solid");
     }
-    
+}
 
-    // document.body.classList.toggle("darkModeBody");
-    // var element = document.getElementsByTagName("a");
-    // for(let i=0;i<element.length;i++)
-    // {
-    //     if(element[i].className != "active")
-    //     {
-    //         element[i].classList.toggle("darkModeA");
-    //         if(element[i].className == "non darkModeA")
-    //         {
-    //             element[i].style.color = "white";
-    //         }
-    //         else
-    //         {
-    //             element[i].style.color = "black";
-    //         }
-    //     }
-        
-    // }
+function toRectangle(event)
+{
+  let elements = document.getElementsByClassName("rectangle");
+  if(event.target.tagName == "LI")
+  {
+    if(elements.length > 0)
+    {
+      removeRectangle(elements);
+    }
+    else
+    {
+      event.target.classList.toggle("rectangle");
+    }
+    
+  }
+  else if(event.target.tagName == "I" || event.target.tagName == "IMG")
+  {
+    if(elements.length > 0)
+    {
+      removeRectangle(elements);
+    }
+    else
+    {
+      event.target.parentElement.classList.toggle("rectangle");
+    }
+  }
+  else
+  {
+    removeRectangle(elements);
+  }
+}
+
+function removeRectangle(elements)
+{
+  for(let i=0;i<elements.length;i++) elements[i].classList.remove("rectangle");
 }
