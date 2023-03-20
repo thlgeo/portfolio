@@ -7,7 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body onclick="toRectangle(event)">
+<body>
     <div class="parallax">
         <span value="-15"></span>
         <span value="2"></span>
@@ -21,7 +21,7 @@
             </div>
             <ul class="nav-list">
                 <li><a href="#" class="active">Acceuil</a></li>
-                <li><a href="#projets" class="non">Mes Projets</a></li>
+                <!-- <li><a href="#projets" class="non">Mes Projets</a></li> -->
                 <li><a href="#" class="non">À propos</a></li>
                 <li><a href="#contact" class="non">Contact</a></li>
                 <li class="icon" onclick="darkMode()"><i id="darkMode" class="fa-solid fa-moon"></i></li>
@@ -48,11 +48,24 @@
         </div>
         <footer>
             <ul id="contact">
-                <li><i class="fa-brands fa-twitter fa-lg"></i><p class="compte">@thlgeo</p></li>
-                <li><img src="img/github_logo.png" alt=""><p class="compte">@thlgeo</p></li> 
-                <!-- <i class="fa-brands fa-github fa-2xl"></i> -->
+                <li>
+                    <div class="card" >
+                        <span class="infoicon">
+                            <i class="fa-solid fa-envelope fa-lg"></i>
+                        </span>
+                        <h1 class="title"><a href="mailto:theo.lenglart.etu@univ-lille.fr">theo<span class="point">.</span>lenglart<span class="point">.</span>etu@univ-lille<span class="point">.</span>fr</a></h1>
+                      </div>
+                </li>
+                <li>
+                    <div class="card2">
+                        <span class="infoicon" style="color: var(--color-darkMode);">
+                            <i class="fa-brands fa-github fa-2xl"></i>
+                        </span>
+                        <h1 class="title"><a href="https://github.com/thlgeo?tab=repositories" target="_blank">@thlgeo</a></h1>
+                      </div>
+                </li> 
             </ul>
-            <p><a href="#">Théo Lenglart 2023</a> • <a href="#">Accueil</a> • <a href="#">Mes Projets</a> • <a href="#">À Propos</a> • <a href="#">Contact</a></p>
+            <p><a href="#">Théo Lenglart 2023</a> • <a href="#">Accueil</a> • <a href="#projets">Mes Projets</a> • <a href="#">À Propos</a> • <a href="#">Contact</a></p>
         </footer>
     </div> 
     <div class="fleche-bas" >

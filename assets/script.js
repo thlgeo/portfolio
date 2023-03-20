@@ -19,8 +19,8 @@ function darkMode()
       r.style.setProperty('--background-darkMode','black');
       r.style.setProperty('--color-hover-darkMode','black');
       r.style.setProperty('--background-hover-darkMode','white');
-      document.getElementById("darkMode").classList.add("fa-regular");
-      document.getElementById("darkMode").classList.remove("fa-solid");
+      document.getElementById("darkMode").classList.add("fa-sun");
+      document.getElementById("darkMode").classList.remove("fa-moon");
     }
     else
     {
@@ -28,44 +28,44 @@ function darkMode()
       r.style.setProperty('--background-darkMode','white');
       r.style.setProperty('--color-hover-darkMode','white');
       r.style.setProperty('--background-hover-darkMode','black');
-      document.getElementById("darkMode").classList.remove("fa-regular");
-      document.getElementById("darkMode").classList.add("fa-solid");
+      document.getElementById("darkMode").classList.remove("fa-sun");
+      document.getElementById("darkMode").classList.add("fa-moon");
     }
 }
 
-function toRectangle(event)
-{
-  let elements = document.getElementsByClassName("rectangle");
-  if(event.target.tagName == "LI")
-  {
-    if(elements.length > 0)
-    {
-      removeRectangle(elements);
-    }
-    else
-    {
-      event.target.classList.toggle("rectangle");
-    }
+// function toRectangle(event)
+// {
+//   let elements = document.getElementsByClassName("rectangle");
+//   if(event.target.tagName == "LI")
+//   {
+//     if(elements.length > 0)
+//     {
+//       removeRectangle(elements);
+//     }
+//     else
+//     {
+//       event.target.classList.toggle("rectangle");
+//     }
     
-  }
-  else if(event.target.tagName == "I" || event.target.tagName == "IMG")
-  {
-    if(elements.length > 0)
-    {
-      removeRectangle(elements);
-    }
-    else
-    {
-      event.target.parentElement.classList.toggle("rectangle");
-    }
-  }
-  else
-  {
-    removeRectangle(elements);
-  }
-}
+//   }
+//   else if(event.target.tagName == "I" || event.target.tagName == "IMG")
+//   {
+//     if(elements.length > 0)
+//     {
+//       removeRectangle(elements);
+//     }
+//     else
+//     {
+//       event.target.parentElement.classList.toggle("rectangle");
+//     }
+//   }
+//   else
+//   {
+//     removeRectangle(elements);
+//   }
+// }
 
-function removeRectangle(elements)
-{
-  for(let i=0;i<elements.length;i++) elements[i].classList.remove("rectangle");
-}
+// function removeRectangle(elements)
+// {
+//   for(let i=0;i<elements.length;i++) elements[i].classList.remove("rectangle");
+// }
