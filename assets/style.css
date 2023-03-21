@@ -328,6 +328,7 @@ footer ul
     list-style: none;
     justify-content: center;
     align-items: center;
+    padding-left: 0;
 }
 
 footer ul li
@@ -342,34 +343,11 @@ footer ul li
     transition: 0.3s;
 }
 
-/* footer ul li:nth-child(1)
-{
-    background-color: gray;
-}
-
-footer ul li:nth-child(2)
-{
-    height: 30px;
-    width: 30px;
-    border: 1px solid var(--color-darkMode);
-}
-
-.fa-github
-{
-    color: var(--color-darkMode);
-}
-
-*/
  footer p a
 {
     color: grey;
     text-decoration: none;
-} /*
-
-footer ul li .fa-envelope
-{
-    color: white;
-} */
+}
 
 .card{
     position:relative;
