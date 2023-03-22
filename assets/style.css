@@ -1,12 +1,14 @@
-/* couleurs : white, #3480E4(bleu) */
+/* couleurs : white, #3480E4(bleu) projet (dark): #242424*/
 :root
 {
     --color-darkMode: black;
     --background-darkMode: white;
     --color-hover-darkMode: white;
     --background-hover-darkMode: black;
+    --background-projet: lightgrey;
     --width-screen: 100%;
     --heigth-screen: 100vh;
+    --box-shadow: black;
 }
 
 html
@@ -228,7 +230,7 @@ a
     align-items: center;
     justify-content: center;
     color: var(--color-darkMode);
-    z-index: 1;
+    z-index: 0;
 }
 
 .fleche-bas .container-fleche
@@ -280,11 +282,18 @@ a
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 45px;
+}
+
+.projet:hover
+{
+    background: var(--background-projet);
+    cursor: pointer;
 }
 
 .projet-container .projet:not(:last-child):after
 {
+    position: absolute;
     content:""; 
     float: left;
     margin-left: 35%;
@@ -298,7 +307,9 @@ a
 
 .projet
 {
+    position: relative;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .projet p
@@ -311,6 +322,56 @@ a
 {
     font-style: italic;
 }
+
+.suite
+{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); 
+    z-index: 10;
+}
+
+.suite-container
+{
+    position: relative;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 30vw;
+    background-color: var(--background-darkMode);
+    border-radius: 10px;
+    box-shadow: 0 0 0.3rem var(--box-shadow);
+}
+
+.suite .suite-container .close
+{
+    font-size: 50px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: grey;
+    cursor: pointer;
+}
+
+.suite h1
+{
+    font-size: 40px;
+}
+
+.suite p
+{
+    font-size: 20px;
+}
+
 footer
 {
     color: var(--color-darkMode);

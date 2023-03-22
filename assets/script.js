@@ -1,6 +1,6 @@
+/////////// Pour le dark mode au chargement de la page
 if(sessionStorage.getItem("darkMode") == null)
 {
-  alert(1);
   sessionStorage.setItem("darkMode","light");
 }
 let theme = sessionStorage.getItem("darkMode");
@@ -25,6 +25,7 @@ else if(theme === "light")
   document.getElementById("darkMode").classList.add("fa-moon");
 }
 
+/////// Parallax
 document.addEventListener("mousemove", parallax);
 function parallax(event) {
   this.querySelectorAll(".parallax span").forEach((shift) => {
@@ -36,30 +37,9 @@ function parallax(event) {
   });
 }
 
-function getCookie(name) {
-  var dc = document.cookie;
-  var prefix = name + "=";
-  var begin = dc.indexOf("; " + prefix);
-  if (begin == -1) {
-      begin = dc.indexOf(prefix);
-      if (begin != 0) return null;
-  }
-  else
-  {
-      begin += 2;
-      var end = document.cookie.indexOf(";", begin);
-      if (end == -1) {
-      end = dc.length;
-      }
-  }
-  // because unescape has been deprecated, replaced with decodeURI
-  //return unescape(dc.substring(begin + prefix.length, end));
-  return decodeURI(dc.substring(begin + prefix.length, end));
-} 
-
+//////// pour le dark mode on click sur le bouton
 function darkMode()
 {
-    let r = document.querySelector(':root');
     let rs = getComputedStyle(r);
     if(sessionStorage.getItem("darkMode") === "light")
     {
@@ -67,6 +47,8 @@ function darkMode()
       r.style.setProperty('--background-darkMode','black');
       r.style.setProperty('--color-hover-darkMode','black');
       r.style.setProperty('--background-hover-darkMode','white');
+      r.style.setProperty("--background-projet"," #242424");
+      r.style.setProperty("--box-shadow"," white");
       document.getElementById("darkMode").classList.add("fa-sun");
       document.getElementById("darkMode").classList.remove("fa-moon");
       sessionStorage.setItem("darkMode","dark");
@@ -77,8 +59,34 @@ function darkMode()
       r.style.setProperty('--background-darkMode','white');
       r.style.setProperty('--color-hover-darkMode','white');
       r.style.setProperty('--background-hover-darkMode','black');
+      r.style.setProperty("--background-projet","lightgrey");
+      r.style.setProperty("--box-shadow"," black");
       document.getElementById("darkMode").classList.remove("fa-sun");
       document.getElementById("darkMode").classList.add("fa-moon");
       sessionStorage.setItem("darkMode","light");
     }
+}
+
+//////// Popup
+function popup(event)
+{
+  let ele = event.target;
+  if(ele.className != "projet")
+  {
+    ele = ele.parentElement;
+  }
+  ele.previousElementSibling.style.display = "flex";
+  document.getElementById("fleche").style.display = "none";
+}
+
+
+function popout(event) {
+  let suite = document.getElementsByClassName("suite");
+  if (event.target.className == "suite" || event.target.className == "close") {
+    for(let i=0;i<suite.length;i++)
+    {
+      suite[i].style.display = "none";
+    }
+    document.getElementById("fleche").style.display = "flex";
+  }
 }
