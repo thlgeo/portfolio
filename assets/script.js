@@ -75,8 +75,17 @@ function popup(event)
   {
     ele = ele.parentElement;
   }
-  ele.previousElementSibling.style.display = "flex";
-  document.getElementById("fleche").style.display = "none";
+  switch (ele.id)
+  {
+    case "candy":
+      document.getElementById("suite-candy").style.display = "flex";
+      break;
+    case "apple":
+      document.getElementById("suite-apple").style.display = "flex";
+      break;
+    default:
+      break;
+  }
 }
 
 
