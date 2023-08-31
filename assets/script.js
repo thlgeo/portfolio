@@ -48,7 +48,7 @@ function darkMode()
       r.style.setProperty('--color-hover-darkMode','black');
       r.style.setProperty('--background-hover-darkMode','white');
       r.style.setProperty("--background-projet"," #242424");
-      r.style.setProperty("--box-shadow"," white");
+      r.style.setProperty("--box-shadow","rgba(255,255,255,0.3)");
       document.getElementById("darkMode").classList.add("fa-sun");
       document.getElementById("darkMode").classList.remove("fa-moon");
       sessionStorage.setItem("darkMode","dark");
@@ -74,6 +74,11 @@ function popup(event)
   if(ele.className != "projet")
   {
     ele = ele.parentElement;
+    if(ele.className != "projet")
+    {
+      
+      ele = ele.parentElement;
+    }
   }
   switch (ele.id)
   {
@@ -82,6 +87,9 @@ function popup(event)
       break;
     case "apple":
       document.getElementById("suite-apple").style.display = "flex";
+      break;
+    case "site-marchand":
+      document.getElementById("suite-site-marchand").style.display = "flex";
       break;
     default:
       break;

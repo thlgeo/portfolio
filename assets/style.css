@@ -8,7 +8,7 @@
     --background-projet: lightgrey;
     --width-screen: 100%;
     --heigth-screen: 100vh;
-    --box-shadow: black;
+    --box-shadow: rgba(0,0,0,0.4);
 }
 
 html
@@ -319,6 +319,23 @@ a
     border-radius: 10px;
 }
 
+.projet .contenu
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projet img
+{
+    height: 150px;
+    float: left;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px var(--box-shadow);
+}
+
 .projet p
 {
     color: grey;
@@ -342,7 +359,9 @@ a
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgba(0,0,0,0.2); 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     z-index: 10;
 }
 
@@ -356,7 +375,15 @@ a
     width: 30vw;
     background-color: var(--background-darkMode);
     border-radius: 10px;
-    box-shadow: 0 0 0.3rem var(--box-shadow);
+    box-shadow: 0 0 20px 2px var(--box-shadow);
+    overflow: scroll;
+}
+
+.suite-container img
+{
+    width: 30vw;
+    box-shadow: 0 0 10px 2px var(--box-shadow);
+    border-radius: 10px;
 }
 
 .suite .suite-container .close
