@@ -384,6 +384,7 @@ a
     width: 30vw;
     box-shadow: 0 0 10px 2px var(--box-shadow);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .suite .suite-container .close
@@ -394,6 +395,25 @@ a
     right: 20px;
     color: grey;
     cursor: pointer;
+}
+
+.acce-site
+{
+    background: #b9d7ff;
+    /* border: 2px solid #3480E4; */
+    color: #3480E4;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    width: 150px;
+    margin: 0 auto;
+    padding: 5px;
+    transition: 0.3s;
+}
+.acce-site:hover
+{
+    background: #3480E4;
+    color: white;
 }
 
 .suite h1
