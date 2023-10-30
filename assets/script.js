@@ -67,6 +67,56 @@ function darkMode()
     }
 }
 
+var texts = document.getElementsByClassName("chemin-site");
+var text = texts[texts.length-1];
+var splitText = text.innerText.split('');
+// for(let i=0;i<texts.length;i++){
+//   splitText = splitText.concat(texts[i].innerText.split(""));
+//   // setInterval(function(){
+//   //   AjoutDeLettre(i)
+//   // }
+//   //   , 100 );
+// }
+// let j=0;
+// for(let i=0;i<splitText.length;i++)
+// {
+//   if(splitText[i] == "/")
+//   {
+//     if(i == 0 || splitText[i] == "/")
+//     {
+//       texts[j].innerText = "";
+//     }
+//     if(j < 1)
+//     {
+//       j++;
+//     }
+   
+//   }
+//   console.log(texts[j])
+  
+  
+//   setTimeout(() => {AjoutDeLettre(i,j)}, i*100);
+// }
+text.innerText = "";
+
+i = 0;
+setInterval(function(){    AjoutDeLettre()}    , 100 );
+function AjoutDeLettre(){
+  if(i < splitText.length){
+    text.innerHTML += splitText[i];
+    i++;
+  }
+}
+
+
+
+// function AjoutDeLettre(i,j){
+//   if(i < splitText.length){
+//     texts[j].innerText += splitText[i];
+//     // j++;
+//   }
+// }
+
 //////// Popup
 function popup(event)
 {
