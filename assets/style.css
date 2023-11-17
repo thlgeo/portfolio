@@ -516,6 +516,12 @@ footer ul li
     color:white;
     transition:ease-out .3s;
 }
+
+.infoicon fa-github
+{
+    color: black;
+}
+
 .title{
     margin:0;
     white-space: nowrap;
