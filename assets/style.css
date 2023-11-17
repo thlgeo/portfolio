@@ -379,6 +379,10 @@ a
     overflow: scroll;
 }
 
+.suite-container h1
+{
+    margin-top: 0;
+}
 .suite-container img
 {
     width: 30vw;
