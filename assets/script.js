@@ -67,6 +67,7 @@ function darkMode()
     }
 }
 
+// effet titre
 var texts = document.getElementsByClassName("chemin-site");
 var text = texts[texts.length-1];
 var splitText = text.innerText.split('');

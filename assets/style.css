@@ -1,4 +1,4 @@
-/* couleurs : white, #3480E4(bleu) projet (dark): #242424*/
+/* couleurs : white, var(--blue)(bleu) projet (dark): #242424*/
 :root
 {
     --color-darkMode: black;
@@ -9,6 +9,7 @@
     --width-screen: 100%;
     --heigth-screen: 100vh;
     --box-shadow: rgba(0,0,0,0.4);
+    --blue: #3480E4;
 }
 
 html
@@ -32,7 +33,7 @@ body
 
 a
 {
-    color: #3480E4;
+    color: var(--blue);
 }
 
 .parallax
@@ -54,7 +55,7 @@ a
     height: 20px;
     width: 20px;
     border-radius: 100%;
-    background: #3480E4;
+    background: var(--blue);
 }
 .parallax span:nth-child(1) {
     top: 10%;
@@ -95,7 +96,7 @@ a
     margin-left: 100px;
     font-weight: 600;
     font-size: 24px;
-    color: #3480E4;
+    color: var(--blue);
 }
 
 .titre-site a
@@ -146,7 +147,7 @@ a
   bottom: -5px;
   left: 0;
   transform: scaleX(0);
-  background: #3480E4 ;
+  background: var(--blue) ;
   border-radius: 5px;
   transform-origin: bottom right;
   transition: transform 0.4s ease-out;
@@ -179,7 +180,7 @@ a
 .nav-list .active
 {
     text-decoration: none;
-    color: #3480E4;
+    color: var(--blue);
 }
 
 .container
@@ -217,13 +218,13 @@ a
 
 .texte-accueil .nom, .texte-accueil .metier
 {
-    color: #3480E4;
+    color: var(--blue);
 }
 
 .lieu
 {
     text-decoration: underline;
-    text-decoration-color: #3480E4;
+    text-decoration-color: var(--blue);
     text-decoration-thickness: 4px;
 }
 
@@ -275,7 +276,7 @@ a
     border-radius: 10px;
     height: 8px;
     width: 220px;
-    box-shadow: 0 55px 0 0 #3480E4;
+    box-shadow: 0 55px 0 0 var(--blue);
     margin-bottom: 80px;
 }
 
@@ -305,7 +306,7 @@ a
     float: left;
     margin-left: 35%;
     margin-right: 35%;
-    background:#3480E4; 
+    background:var(--blue); 
     width: 30%; 
     height:5px; 
     margin-top: 30px;
@@ -404,8 +405,8 @@ a
 .acce-site
 {
     background: #b9d7ff;
-    /* border: 2px solid #3480E4; */
-    color: #3480E4;
+    /* border: 2px solid var(--blue); */
+    color: var(--blue);
     text-align: center;
     border-radius: 25px;
     text-decoration: none;
@@ -416,7 +417,7 @@ a
 }
 .acce-site:hover
 {
-    background: #3480E4;
+    background: var(--blue);
     color: white;
 }
 
@@ -517,9 +518,9 @@ footer ul li
     transition:ease-out .3s;
 }
 
-.infoicon fa-github
+.infoicon .fa-github
 {
-    color: black;
+    color: var(--color-darkMode);
 }
 
 .title{
@@ -537,7 +538,7 @@ footer ul li
     z-index: 2;
     outline:none;
 }
-.card:hover .infoicon, .card:focus .infoicon, .card2:hover .infoicon, .card2:focus .infoicon
+.card:hover .infoicon, .card:focus .infoicon, .card2:hover .infoicon, .card2:focus .infoicon, .card2:hover .infoicon .fa-brands
 {
     margin-bottom: 10px;
     color: black;

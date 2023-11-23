@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr" style="--color-darkMode:black; --background-darkMode:white; --color-hover-darkMode:white; --background-hover-darkMode:black;">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport">
+        <title>Mes formations</title>
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/formations.css">
+    </head>
+    <body>
+        <div class="parallax">
+            <span value="-15"></span>
+            <span value="2"></span>
+            <span value="10"></span>
+        </div>
+        <div class="background">
+            <div class="nav-bar">
+                <div class="titre-site">
+                    <a href="index.html" class="chemin-site">@theolenglart/</a><a class="chemin-site" href="formations.html">formations/</a>
+                    <span id="chemin">|</span>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="non">Acceuil</a></li>
+                    <!-- <li><a href="#projets" class="non">Mes Projets</a></li> -->
+                    <li><a href="formation.html" class="active">Formations</a></li>
+                    <li><a href="#contact" class="non">Contact</a></li>
+                    <li class="icon" onclick="darkMode()"><i id="darkMode" class="fa-solid fa-moon"></i></li>
+                    
+                </ul>
+            </div>
+            <div class="container">
+                <h1>Mes formations</h1>
+                <ul class="timeline">
+                    <li class="timeline-card" style="--accent-color:#41516C">
+                        <div class="date">2022 - Aujourd'hui</div>
+                        <div class="title">BUT informatique</div>
+                        <div class="descr">IUT de Lille - Villeneuve d'Ascq <br><br>Spécialisé en administration système et réseaux</div>
+                    </li>
+                    <li class="timeline-card" style="--accent-color:#FBCA3E">
+                        <div class="date">2019 - 2022</div>
+                        <div class="title">Baccalauréat général</div>
+                        <div class="descr">Lycée Gustave Eiffel - Armentières <br><br>Spécialité :
+                            <ul>
+                                <li>Mathématiques</li>
+                                <li>NSI</li>
+                                <li>Physique-Chimie (abandonnée en terminal)</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <footer>
+                <ul id="contact">
+                    <li>
+                        <div class="card" >
+                            <span class="infoicon">
+                                <i class="fa-solid fa-envelope fa-lg"></i>
+                            </span>
+                            <h1 class="title"><a href="mailto:theo.lenglart.etu@univ-lille.fr">theo<span class="point">.</span>lenglart<span class="point">.</span>etu@univ-lille<span class="point">.</span>fr</a></h1>
+                          </div>
+                    </li>
+                    <li>
+                        <div class="card2">
+                            <span class="infoicon" style="color: var(--color-darkMode);">
+                                <i class="fa-brands fa-github fa-2xl"></i>
+                            </span>
+                            <h1 class="title"><a href="https://github.com/thlgeo?tab=repositories" target="_blank">@thlgeo</a></h1>
+                          </div>
+                    </li> 
+                </ul>
+                <p><a href="index.html">Théo Lenglart 2023</a> • <a href="index.html">Accueil</a> • <a href="#projets">Mes Projets</a> • <a href="propos.html">À Propos</a> • <a href="#contact">Contact</a></p>
+            </footer>
+        </div>
+
+        <script src="assets/script.js"></script>
+        <script src="https://kit.fontawesome.com/d8711a63f5.js" crossorigin="anonymous"></script>
+    </body>
+</html>
