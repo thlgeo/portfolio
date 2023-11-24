@@ -557,6 +557,7 @@ footer ul li
 
 .carrousel
 {
+    position: relative;
     display: flex;
     flex-direction: row;
 }
@@ -567,6 +568,7 @@ footer ul li
     justify-content: center;
     align-items: center;
     width: 110vw;
+    gap: 10px;
 }
 
 @font-face {
@@ -577,7 +579,7 @@ footer ul li
 
 @keyframes blink
 {
-    100%{opacity: 1;};
+    100%{opacity: 1;}
 }
   
 
