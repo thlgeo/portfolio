@@ -555,6 +555,20 @@ footer ul li
     font-family: serif;
 }
 
+.carrousel
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 110vw;
+}
+
 @font-face {
     font-family: "Typo";
     src: local("Typo"),
