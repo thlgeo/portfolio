@@ -12,6 +12,8 @@ if(theme == "dark")
   r.style.setProperty('--background-darkMode','black');
   r.style.setProperty('--color-hover-darkMode','black');
   r.style.setProperty('--background-hover-darkMode','white');
+  r.style.setProperty("--background-projet"," #242424");
+  r.style.setProperty("--box-shadow","rgba(255,255,255,0.3)");
   document.getElementById("darkMode").classList.add("fa-sun");
   document.getElementById("darkMode").classList.remove("fa-moon");
 }
@@ -21,6 +23,8 @@ else if(theme === "light")
   r.style.setProperty('--background-darkMode','white');
   r.style.setProperty('--color-hover-darkMode','white');
   r.style.setProperty('--background-hover-darkMode','black');
+  r.style.setProperty("--background-projet","lightgrey");
+  r.style.setProperty("--box-shadow","rgba(0,0,0,0.3");
   document.getElementById("darkMode").classList.remove("fa-sun");
   document.getElementById("darkMode").classList.add("fa-moon");
 }
