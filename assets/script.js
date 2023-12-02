@@ -171,3 +171,13 @@ const swiper = new Swiper('.sample-slider',{
     speed: 3000,          //add
     slidesPerView: 7,
 });
+
+window.addEventListener("scroll", e => {
+  if(window.scrollY != 0)
+  {
+    document.getElementById("fleche-haut").style.display = "flex";
+  }else{
+    document.getElementById("fleche-haut").style.display = "none";
+  }
+})
+  
