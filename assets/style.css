@@ -615,6 +615,24 @@ footer ul li
     object-fit: contain;
 }
 
+#fleche-haut
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    display: none;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+}
+
 @font-face {
     font-family: "Typo";
     src: local("Typo"),
