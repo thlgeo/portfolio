@@ -147,12 +147,6 @@ bottom: 0.25rem;
     min-height: 100svh;
 }
 
-footer
-{
-    position: absolute;
-    bottom: 0;
-}
-
 @media (min-width: 40rem) {
 .timeline {
     grid-template-columns: 1fr var(--line-w) 1fr;
