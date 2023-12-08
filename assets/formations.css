@@ -13,6 +13,7 @@ column-gap: var(--col-gap);
 list-style: none;
 width: min(60rem, 90%);
 margin-inline: auto;
+padding: 0;
 }
 
 /* line */
@@ -114,6 +115,11 @@ padding-block-end: 1.5rem;
 font-weight: 300;
 }
 
+footer
+{
+    position: absolute;
+    bottom: 0;
+}
 /* shadows
 .timeline li .title::before,
 .timeline li .descr::before {
