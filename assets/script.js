@@ -163,21 +163,6 @@ function popout(event) {
   }
 }
 
-var slidesPerView = 7;
-if(window.innerWidth <= 600)
-{
-  slidesPerView = 4;
-}
-
-const swiper = new Swiper('.sample-slider',{
-  loop: true,
-    autoplay: {
-        delay: 0,
-    },
-    speed: 3000,          //add
-    slidesPerView: slidesPerView,
-});
-
 window.addEventListener("scroll", e => {
   if(window.scrollY != 0)
   {
@@ -194,3 +179,5 @@ burger.addEventListener("click", e => {
   burger.setAttribute('aria-expanded', burger.classList.contains('opened'));
   document.getElementById("nav-list").classList.toggle("active")
 })
+
+// document.getElementById("titre-site").style.width = 5+document.getElementById("chemin-accueil").offsetWidth+"px";

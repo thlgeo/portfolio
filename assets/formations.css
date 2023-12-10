@@ -1,5 +1,14 @@
 h1 {
+    margin-top: 50px;
+    font-size: 25px;
     text-align: center;
+}
+
+.nav-bar #titre-site 
+{
+    width: 180px;
+    word-break: break-all;
+    margin-top: 40px;
 }
   
 .timeline {
@@ -117,7 +126,7 @@ font-weight: 300;
 
 footer
 {
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 /* shadows
@@ -147,7 +156,19 @@ bottom: 0.25rem;
     min-height: 100svh;
 }
 
+
+
 @media (min-width: 40rem) {
+    h1
+    {
+        font-size: 2rem;
+        margin-top: unset;
+    }
+    footer 
+    {
+        position: absolute;
+        bottom: 0;
+    }
 .timeline {
     grid-template-columns: 1fr var(--line-w) 1fr;
 }
