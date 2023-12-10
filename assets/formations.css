@@ -3,13 +3,6 @@ h1 {
     font-size: 25px;
     text-align: center;
 }
-
-.nav-bar #titre-site 
-{
-    width: 180px;
-    word-break: break-all;
-    margin-top: 40px;
-}
   
 .timeline {
 --col-gap: 2rem;
@@ -157,6 +150,15 @@ bottom: 0.25rem;
 }
 
 
+@media only screen and (max-width: 600px)
+{
+    .nav-bar #titre-site 
+    {
+        width: 180px;
+        word-break: break-all;
+        margin-top: 40px;
+    }
+}
 
 @media (min-width: 40rem) {
     h1
@@ -169,6 +171,7 @@ bottom: 0.25rem;
         position: absolute;
         bottom: 0;
     }
+
 .timeline {
     grid-template-columns: 1fr var(--line-w) 1fr;
 }
