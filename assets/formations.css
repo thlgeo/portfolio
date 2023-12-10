@@ -176,11 +176,3 @@ bottom: 0.25rem;
     left: calc(100% + var(--col-gap) + var(--line-w) / 2);
 }
 }
-
-.credits {
-margin-top: 1rem;
-text-align: right;
-}
-.credits a {
-color: var(--color);
-}
