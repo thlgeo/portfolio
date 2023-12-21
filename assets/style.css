@@ -576,7 +576,7 @@ footer
     z-index: 2;
 }
 
-footer ul
+footer #contact
 {
     display: inline-flex;
     flex-wrap: wrap;
@@ -587,15 +587,23 @@ footer ul
     padding-left: 0;
 }
 
-footer ul li
+footer #contact li:not(:first-child)
 {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    height: 32px;
-    width: 32px;
+    align-items: center; */
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     transition: 0.3s;
+    text-align: center;
+    vertical-align: middle;
+}
+
+footer .coordonnee
+{
+    display: flex;
+    flex-direction: column;
 }
 
  footer p a
@@ -616,7 +624,16 @@ footer ul li
     background-color:grey;
     text-align: center;
     z-index: 1;
+    
   }
+
+  .fa-brands
+{
+    font-size: 1.5rem;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
 
 .card2
 {
@@ -634,12 +651,9 @@ footer ul li
     z-index: 0;
 }
 
-.card3
+.fa-linkedin-in
 {
-    background-color: #3480E4;
-    clip-path: circle(10% at 50% 85%);
-    font-size: 1.3rem;
-    z-index: 0;
+    color: white;
 }
 
 .card2 .infoicon
@@ -662,7 +676,7 @@ footer ul li
     transition:ease-out .3s;
 }
 
-.infoicon .fa-github
+.github
 {
     color: var(--color-darkMode);
 }
@@ -804,7 +818,7 @@ footer ul li
         right: 15px;
         height: 35px;
         width: 35px;
-        background-color: rgba( 255, 255, 255, 0.3 );
+        background-color: rgba( 10, 10, 10, 0.1 );
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         display: flex;
@@ -832,7 +846,7 @@ footer ul li
     }
 
     .nav-list.active{
-        height: 180px;
+        height: 300px;
         width: 115px;
         /* padding: 15px;
         padding-top: 50px; */
