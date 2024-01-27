@@ -26,6 +26,67 @@
             </div>
         </div>
     </div>
+    <div class="suite" id="suite-monstre" onclick="popout(event)">
+        <div class="suite-container">
+            <span class="close">&times;</span>
+            <h1>Jeu du monstre et du chasseur</h1>
+            <video controls poster="img/poster-montre.png">
+                <source src="img/monstre-video-1.webm" type="video/webm">
+                <source src="img/monstre-video-1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="muet">La vidéo ne contient pas de son<span class="point">.</span></p>
+            <p class="description">C'est un jeu, écrit en Java, en tour par tour pouvant se jouer à 2, où un joueur incarne un monstre, cherchant la sortie dans un labyrinthe, et où le second incarne un chasseur, ayant comme but de tirer sur le monstre<span class="point">.</span> Trois options sont possibles ; jouer à deux, affronter une IA, ou se faire affronter deux IA<span class="point">.</span><br>
+<br>
+                Les joueurs évoluent dans un espace labyrinthique représenté par une grille de cases, où le monstre commence toujours<span class="point">.</span> Il se place aléatoirement dans le labyrinthe au tout premier tour<span class="point">.</span><br>
+                <br>
+                Un tour se déroule tel que : <br></p>
+                <ul>
+                    <li>Le monstre se déplace d’une case de l’endroit où il était, il ne peut pas se déplacer sur les murs où à une distance de plus de 1 case de son emplacement précédent<span class="point">.</span> Son déplacement peut être en diagonale où simplement dans les directions cardinales, selon les paramètres de la partie<span class="point">.</span></li>
+                    <li>Le chasseur peut tirer sur n’importe quel case du labyrinthe, en apprenant à chaque tir ce qu’il se cache à l’endroit où il a tiré<span class="point">.</span> Si le chasseur tire sur un endroit où le monstre s’est déjà déplacé, il apprend à quel tour le monstre était sur cette case<span class="point">.</span> S'il tire sur la sortie du labyrinthe, il ne va pas savoir que c’était la sortie<span class="point">.</span></li>
+                </ul>
+                    
+                <p class="descriprion">
+                Le jeu se termine quand le chasseur tire sur le monstre ou quand le monstre atteint la sortie du labyrinthe<span class="point">.</span> <br><br>Pour plus d'informations ou pour voir les fichiers sources du jeu : <a href="https://github.com/thlgeo/Jeux-du-monstre" target="_blank">mon GitHub</a><span class="point">.</span>
+                </p>
+            <div class="outils">
+                <h2>Outils utilisés :</h2>
+                <p>Java, JavaFX</p>
+                <h2>Compètences externes :</h2>
+                <ul>
+                    <li>Répondre à un besoin client</li>
+                    <li>Travail d'équipe</li>
+                </ul>
+            </div>
+            <div class="autres">
+                <h2>Autres</h2>
+                <div class="image-supp">
+                    <h3>Accueil du jeu</h3>
+                    <img src="img/accueil.png" alt="">
+                </div>
+                <div class="image-supp">
+                    <h3>Paramètre des joueurs</h3>
+                    <img src="img/joueur.png" alt="">
+                </div>
+                <div class="image-supp">
+                    <h3>Paramètre du labyrinthe</h3>
+                    <img src="img/labyrinthe-param.png" alt="">
+                </div>
+                <div class="image-supp">
+                    <h3>Jeu du monstre</h3>
+                    <img src="img/monstre.png" alt="">
+                </div>
+                <div class="image-supp">
+                    <h3>Jeu du chasseur</h3>
+                    <img src="img/hunter.png" alt="">
+                </div>
+                <div class="image-supp">
+                    <h3>IA vs IA</h3>
+                    <img src="img/ia-ia.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="suite" id="suite-apple" onclick="popout(event)">
         <div class="suite-container">
             <span class="close" >&times;</span>
@@ -93,11 +154,18 @@
         <div id="projets">
             <h1 class="titre">Mes projets</h1>
             <div class="projet-container">
-                <div class="projet" id="candy" onclick="popup(event)">
-                    <h1>Candy Shop a maths' adventure</h1>
+                <div class="projet" id="monstre" onclick="popup(event)">
+                    <h1>Jeu du monstre et du chasseur</h1>
                     <div class="contenu">
-                        <img src="img/MENU_PRINCIPALE.png" alt="">
-                        <p class="description"><span class="nom-projet">Candy Shop a maths' adventure</span> est un jeu pour enfant ou vous incarnez un marchand de bonbon qui doit vendre un maximum de bonbons pour éviter la faillite<span class="point">.</span> Pour cela, vous pourrez choisir entre différents mode de jeu (mode campagne ou infini) et tenter de faire le plus<span class="point">.</span><span class="point">.</span><span class="point">.</span> </p>
+                        <img src="img/poster-montre.png" alt="">
+                        <p class="description">C'est un jeu, écrit en Java, en tour par tour pouvant se jouer à 2, où un joueur incarne un monstre, cherchant la sortie dans un labyrinthe, et où le second incarne un chasseur, ayant comme but de tirer sur le monstre<span class="point">.</span> Trois options sont possibles ; jouer à deux, affronter une IA, ou<span class="point">.</span><span class="point">.</span><span class="point">.</span></p>
+                    </div>
+                </div>
+                <div class="projet" id="site-marchand" onclick="popup(event)">
+                    <h1>Site vitrine pour une association bien être</h1>
+                    <div class="contenu">
+                        <img src="img/accueil_site-marchand.png" alt="">
+                        <p class="description">J'ai créé un site internet qui permet de donner de la visibilité à une association (Un Temps Pour Soi) et pour que les clients puissent s'inscrire et payer sur ce site pour l'activité qu'ils souhaitent<span class="point">.</span> J'ai aussi travaillé sur le référencement de ce site pour que les clients n'aient pas à<span class="point">.</span><span class="point">.</span><span class="point">.</span></p>
                     </div>
                 </div>
                 <div class="projet" id="apple" onclick="popup(event)">
@@ -108,13 +176,13 @@
                     </div>
                     
                 </div>
-                <div class="projet" id="site-marchand" onclick="popup(event)">
-                    <h1>Site vitrine pour une association bien être</h1>
+                <div class="projet" id="candy" onclick="popup(event)">
+                    <h1>Candy Shop a maths' adventure</h1>
                     <div class="contenu">
-                        <img src="img/accueil_site-marchand.png" alt="">
-                        <p class="description">J'ai créé un site internet qui permet de donner de la visibilité à une association (Un Temps Pour Soi) et pour que les clients puissent s'inscrire et payer sur ce site pour l'activité qu'ils souhaitent<span class="point">.</span> J'ai aussi travaillé sur le référencement de ce site pour que les clients n'aient pas à<span class="point">.</span><span class="point">.</span><span class="point">.</span></p>
+                        <img src="img/MENU_PRINCIPALE.png" alt="">
+                        <p class="description"><span class="nom-projet">Candy Shop a maths' adventure</span> est un jeu pour enfant ou vous incarnez un marchand de bonbon qui doit vendre un maximum de bonbons pour éviter la faillite<span class="point">.</span> Pour cela, vous pourrez choisir entre différents mode de jeu (mode campagne ou infini) et tenter de faire le plus<span class="point">.</span><span class="point">.</span><span class="point">.</span> </p>
                     </div>
-                </div>
+                </div>                
             </div>
         </div>
         <h1 class="titre" id="competence" style="margin-bottom: 40px;">Mes compétences</h1>

@@ -516,7 +516,7 @@ a
 {
     margin-top: 0;
 }
-.suite-container img
+.suite-container img, .suite-container video
 {
     width: 30vw;
     box-shadow: 0 0 10px 2px var(--box-shadow);
@@ -532,6 +532,22 @@ a
     right: 20px;
     color: grey;
     cursor: pointer;
+}
+
+.suite-container .muet
+{
+    font-size: small;
+    text-align: center;
+}
+
+.suite-container .image-supp
+{
+    text-align: center;
+}
+
+.suite-container .image-supp img
+{
+    cursor: default;
 }
 
 .acce-site
