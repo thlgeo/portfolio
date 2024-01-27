@@ -968,6 +968,12 @@ footer .coordonnee
         object-fit: fill;
     }
 
+    .suite-container video
+    {
+        width: 100%;
+        object-fit: fill;
+    }
+
     footer p
     {
         font-size: 0.5em;
