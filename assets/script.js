@@ -149,6 +149,9 @@ function popup(event)
     case "monstre":
       document.getElementById("suite-monstre").style.display = "flex";
       break;
+    case "odoo":
+      document.getElementById("suite-odoo").style.display = "flex";
+      break;
     default:
       break;
   }
