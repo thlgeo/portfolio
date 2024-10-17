@@ -10,6 +10,7 @@
     --heigth-screen: 100vh;
     --box-shadow: rgba(0,0,0,0.4);
     --blue: #3480E4;
+    --bg-card: rgba(255, 255, 255, 0.301);
 }
 
 html

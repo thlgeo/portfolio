@@ -6,27 +6,38 @@ if(sessionStorage.getItem("darkMode") == null)
 let theme = sessionStorage.getItem("darkMode");
 let r = document.querySelector(':root');
 
-if(theme == "dark")
-{
-  r.style.setProperty('--color-darkMode','white');
-  r.style.setProperty('--background-darkMode','black');
-  r.style.setProperty('--color-hover-darkMode','black');
-  r.style.setProperty('--background-hover-darkMode','white');
-  r.style.setProperty("--background-projet"," #242424");
-  r.style.setProperty("--box-shadow","rgba(255,255,255,0.3)");
-  document.getElementById("darkMode").classList.add("fa-sun");
-  document.getElementById("darkMode").classList.remove("fa-moon");
-}
-else if(theme === "light")
-{
+function dark() {
+  
   r.style.setProperty('--color-darkMode','black');
   r.style.setProperty('--background-darkMode','white');
   r.style.setProperty('--color-hover-darkMode','white');
   r.style.setProperty('--background-hover-darkMode','black');
   r.style.setProperty("--background-projet","lightgrey");
   r.style.setProperty("--box-shadow","rgba(0,0,0,0.3");
+  r.style.setProperty("--bg-card","rgba(255, 255, 255, 0.301)");
   document.getElementById("darkMode").classList.remove("fa-sun");
   document.getElementById("darkMode").classList.add("fa-moon");
+}
+
+function light() {
+  r.style.setProperty('--color-darkMode','white');
+  r.style.setProperty('--background-darkMode','black');
+  r.style.setProperty('--color-hover-darkMode','black');
+  r.style.setProperty('--background-hover-darkMode','white');
+  r.style.setProperty("--background-projet"," #242424");
+  r.style.setProperty("--box-shadow","rgba(255,255,255,0.3)");
+  r.style.setProperty("--bg-card","rgba(255, 255, 255, 0.1)");
+  document.getElementById("darkMode").classList.add("fa-sun");
+  document.getElementById("darkMode").classList.remove("fa-moon");
+}
+
+if(theme == "dark")
+{
+  light();
+}
+else if(theme === "light")
+{
+ dark();
 }
 
 /////// Parallax
@@ -47,26 +58,12 @@ function darkMode()
     let rs = getComputedStyle(r);
     if(sessionStorage.getItem("darkMode") === "light")
     {
-      r.style.setProperty('--color-darkMode','white');
-      r.style.setProperty('--background-darkMode','black');
-      r.style.setProperty('--color-hover-darkMode','black');
-      r.style.setProperty('--background-hover-darkMode','white');
-      r.style.setProperty("--background-projet"," #242424");
-      r.style.setProperty("--box-shadow","rgba(255,255,255,0.3)");
-      document.getElementById("darkMode").classList.add("fa-sun");
-      document.getElementById("darkMode").classList.remove("fa-moon");
+      light();
       sessionStorage.setItem("darkMode","dark");
     }
     else if(sessionStorage.getItem("darkMode") === "dark")
     {
-      r.style.setProperty('--color-darkMode','black');
-      r.style.setProperty('--background-darkMode','white');
-      r.style.setProperty('--color-hover-darkMode','white');
-      r.style.setProperty('--background-hover-darkMode','black');
-      r.style.setProperty("--background-projet","lightgrey");
-      r.style.setProperty("--box-shadow"," black");
-      document.getElementById("darkMode").classList.remove("fa-sun");
-      document.getElementById("darkMode").classList.add("fa-moon");
+      dark();
       sessionStorage.setItem("darkMode","light");
     }
 }
